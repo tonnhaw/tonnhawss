@@ -1,0 +1,33 @@
+.container {
+  overflow: hidden;
+  width: 100%;
+  height: 400px; /* ความสูงของคอนเทนเนอร์ */
+}
+
+.image {
+  width: 200px; /* กว้างของรูปภาพ */
+  height: 200px; /* สูงของรูปภาพ */
+  background-size: cover;
+  animation: slide 10s linear infinite; /* เคลื่อนไหว 10 วินาที */
+}
+
+.image1 {
+  background-image: url('image1.jpg'); /* รูปภาพที่คุณต้องการเลื่อน */
+}
+
+.image2 {
+  background-image: url('image2.jpg'); /* รูปภาพที่คุณต้องการเลื่อน */
+}
+
+.image3 {
+  background-image: url('image3.jpg'); /* รูปภาพที่คุณต้องการเลื่อน */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* เริ่มต้นที่ 0 */
+  }
+  100% {
+    transform: translateX(-600px); /* สิ้นสุดที่ -600px (เลื่อนรูปภาพไปทางซ้าย) */
+  }
+}
